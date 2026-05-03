@@ -66,7 +66,7 @@ const Staff = () => {
         {facultyData.map((teacher, index) => (
           <div
             key={index}
-            className={`w-64 rounded-xl bg-gray-100 border-b-4 border-blue-900 
+            className={`w-64 rounded-xl bg-white border-b-4 border-blue-900 
                          transform hover:-translate-y-2 
                         transition duration-300 ease-in-out hover:cursor-pointer drop-shadow-[0px_0px_10px_rgba(0,0,0,1)]`}
           >
