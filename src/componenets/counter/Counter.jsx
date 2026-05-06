@@ -71,14 +71,14 @@ const Stats = () => {
       }}
     >
       {/* Colored Overlay like Mz E-Com */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
       <div className="relative max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {statsData.map((item, index) => (
           <div
             key={index}
-            className="bg-white/10 backdrop-blur-md rounded-xl shadow-xl p-8 hover:scale-105 transform transition duration-300 border border-white/20"
+            className="bg-white/10 backdrop-blur-md shadow-xl p-8 hover:scale-105 transform transition duration-300 border border-white/20"
           >
             <div className="text-5xl text-yellow-400 mb-4 flex justify-center drop-shadow-lg">
               {item.icon}
@@ -86,7 +86,7 @@ const Stats = () => {
             <h2 className="text-4xl font-bold text-yellow-300 drop-shadow-md">
               <Counter end={item.value} trigger={visible} />
             </h2>
-            <p className="mt-2 text-lg font-medium text-gray-200">{item.label}</p>
+            <p className="mt-2 text-lg font-medium text-white">{item.label}</p>
           </div>
         ))}
       </div>

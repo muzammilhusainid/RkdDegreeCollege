@@ -1,0 +1,26 @@
+/* Notices vertical scroll */
+.notice-scroll {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 15s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.pause {
+  animation-play-state: paused;
+}
+
+/* Events horizontal scroll */
+.events-scroll {
+  display: flex;
+  animation: scrollLeft 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
