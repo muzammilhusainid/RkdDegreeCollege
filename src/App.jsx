@@ -2,15 +2,22 @@ import { BrowserRouter, Routes, Route } from "react-router"
 import './App.css'
 
 import React from 'react'
-import Home from './componenets/home/Home'
+import About from "./componenets/about/About";
+import Staff from "./componenets/staff/Staff";
+import Home from "./componenets/home/Home"
+import Courses from "./componenets/courses/Courses";
+import ScrollToTop from "./componenets/scrollToTop/ScrollToTop";
 import { Form } from 'react-router-dom'
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -8,6 +8,7 @@ import Facilities from '../facility/Facilities'
 import Staff from '../staff/Staff'
 import Counter from '../counter/Counter'
 import Footer from '../footer/Footer'
+import Director from '../director/Director'
 
 const Home = () => {
   return (
@@ -15,11 +16,10 @@ const Home = () => {
       <Header/>
       <Carousel/>
       <NoticeEvent/>
-      <About/>
-      <Facilities/>
-      <Courses/>
-      <Staff/>
       <Counter/>
+      <About/>
+      <Director/>
+      <Facilities/>
       <Footer/>
     </div>
   )
