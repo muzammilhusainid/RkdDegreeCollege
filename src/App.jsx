@@ -11,7 +11,7 @@ import { Form } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
+    <div className="flex justify-center">
       <BrowserRouter>
       <ScrollToTop/>
         <Routes>
