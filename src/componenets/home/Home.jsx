@@ -18,7 +18,6 @@ const Home = () => {
       <NoticeEvent/>
       <Counter/>
       <About/>
-      <Director/>
       <Facilities/>
       <Footer/>
     </div>

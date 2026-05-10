@@ -40,7 +40,7 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2">
             <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-blue-400 transition">About Us</a></li>
+            <li><a href="/aboutPage" className="hover:text-blue-400 transition">About Us</a></li>
             <li><a href={RkdForm} target="blank" className="hover:text-blue-400 transition">Download Form</a></li>
             <li><a href="/career" className="hover:text-blue-400 transition">List of Holidays (LU)</a></li>
           </ul>

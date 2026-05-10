@@ -8,7 +8,7 @@ const coursesData = [
     name: "BBA (Bachelor of Business Administration)",
     color: "bg-gradient-to-r from-blue-500 to-cyan-500",
     icon: <FaChartBar />,
-    subjects: "Coming Soon...",
+    subjects: "As per University",
     duration: "3 Years (6 Semesters)",
     qualification: "10+2 (Intermediate)",
   },
@@ -16,7 +16,7 @@ const coursesData = [
     name: "B.A. (Bachelor of Arts)",
     color: "bg-gradient-to-r from-red-500 to-pink-500",
     icon: <FaGraduationCap />,
-    subjects: "Hindi, English, Urdu, Home Science, History, Political Science, Sociology,",
+    subjects: "Hindi, English, Urdu, Home Science, History, Political Science, Sociology, Geography",
     duration: "3 Years (6 Semesters)",
     qualification: "10+2 (Intermediate)",
   },
@@ -34,13 +34,21 @@ const coursesData = [
     icon: <FaChartBar />,
     subjects: "Accountancy, Business Studies, Economics",
     duration: "3 Years (6 Semesters)",
-    qualification: "10+2 (Commerce Stream)",
+    qualification: "10+2 (Commerce/Science Stream)",
   },
   {
     name: "M.A. (Master of Arts)",
     color: "bg-gradient-to-r from-purple-500 to-indigo-500",
     icon: <FaGraduationCap />,
     subjects: "Hindi, Home Science,",
+    duration: "2 Years (4 Semesters)",
+    qualification: "Graduation in relevant subject",
+  },
+    {
+    name: "M.Sc. (Master of Science)",
+    color: "bg-gradient-to-r from-blue-900 to-sky-500",
+    icon: <FaGraduationCap />,
+    subjects: "Botany",
     duration: "2 Years (4 Semesters)",
     qualification: "Graduation in relevant subject",
   },
@@ -97,7 +105,7 @@ const Courses = () => {
               </div>
 
               {/* Details */}
-              <div className="p-5 space-y-2 bg-gray-50">
+              <div className="p-5 space-y-1 bg-gray-50">
                 <p>
                   <span className="font-semibold">Subjects:</span>{" "}
                   {course.subjects}

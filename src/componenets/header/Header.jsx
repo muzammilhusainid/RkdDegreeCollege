@@ -30,7 +30,7 @@ const Header = () => {
             className="h-12 w-12 object-cover shadow-md"
           />
           <span className="text-xl font-bold text-blue-900">
-            RKD Degree College
+            Rajkali Devi Mahavidyalaya
           </span>
         </div>
 
@@ -57,7 +57,7 @@ const Header = () => {
             className="h-10 w-10 object-cover shadow-md"
           />
           <span className="text-lg font-bold text-blue-900">
-            RKD College
+            Rajkali Devi Mahavidyalaya
           </span>
         </div>
         <button
@@ -76,7 +76,7 @@ const Header = () => {
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-6">
           <nav className="flex space-x-6 font-medium">
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
-            <Link to="/about" className="hover:text-yellow-400 transition">About Us</Link>
+            <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
             <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
             <Link to="/admissions" className="hover:text-yellow-400 transition">Admissions</Link>
             <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
@@ -102,7 +102,7 @@ const Header = () => {
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-6">
           <nav className="flex space-x-6 font-medium">
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
-            <Link to="/about" className="hover:text-yellow-400 transition">About Us</Link>
+            <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
             <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
             <Link to="/admissions" className="hover:text-yellow-400 transition">Admissions</Link>
             <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
@@ -112,7 +112,7 @@ const Header = () => {
           <div>
             <a
               href={RkdForm} target="blank"
-              className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
+              className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transitijon"
             >
               Admission Form
             </a>
@@ -135,7 +135,7 @@ const Header = () => {
         </div>
         <div className="flex flex-col px-6 py-4 space-y-4">
           <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
-          <Link to="/about" className="hover:text-yellow-400 transition">About Us</Link>
+          <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
           <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
           <Link to="/admissions" className="hover:text-yellow-400 transition">Admissions</Link>
           <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>

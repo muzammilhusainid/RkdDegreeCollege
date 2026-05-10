@@ -1,69 +1,50 @@
 import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import teacher1 from "../../assets/images/teacher1.jpg";
-import teacher2 from "../../assets/images/teacher2.jpg";
+import muzammil from "../../assets/images/muzammil.jpg";
+import sachin from "../../assets/images/sachin.jpg";
+import vijay from "../../assets/images/vijay.jpg";
+import rajiv from "../../assets/images/rajiv.jpg";
+import vinay from "../../assets/images/vinay.jpg";
 // ... similarly import upto teacher15
 
 const facultyData = [
   {
-    name: "Dr. A. Sharma",
-    designation: "Professor of Physics",
-    qualification: "Ph.D. in Physics",
-    image: teacher1,
+    name: "VINAY SRIVASTAV",
+    qualification: "P.H.D POLITICAL SCIENCE",
+    image: vinay,
   },
   {
-    name: "Prof. B. Singh",
-    designation: "Assistant Professor of Commerce",
-    qualification: "M.Com, NET Qualified",
-    image: teacher2,
+    name: "VIJAY PAL PANDEY",
+    qualification: "M.A SOCIOLOGY",
+    image: vijay,
   },
   {
-    name: "Dr. A. Sharma",
-    designation: "Professor of Physics",
-    qualification: "Ph.D. in Physics",
-    image: teacher1,
+    name: "RAJIV KUMAR",
+    qualification: "M.Sc. MATH",
+    image: rajiv,
   },
   {
-    name: "Prof. B. Singh",
-    designation: "Assistant Professor of Commerce",
-    qualification: "M.Com, NET Qualified",
-    image: teacher2,
+    name: "MUZAMMIL HUSAIN",
+    qualification: "B.C.A, CABA-MDTP, CCC",
+    image: muzammil,
   },
-  {
-    name: "Dr. A. Sharma",
-    designation: "Professor of Physics",
-    qualification: "Ph.D. in Physics",
-    image: teacher1,
+   {
+    name: "SACHIN KUMAR",
+    qualification: "B.A, DCA",
+    image: sachin,
   },
-  {
-    name: "Prof. B. Singh",
-    designation: "Assistant Professor of Commerce",
-    qualification: "M.Com, NET Qualified",
-    image: teacher2,
-  },
-  {
-    name: "Dr. A. Sharma",
-    designation: "Professor of Physics",
-    qualification: "Ph.D. in Physics",
-    image: teacher1,
-  },
-  {
-    name: "Prof. B. Singh",
-    designation: "Assistant Professor of Commerce",
-    qualification: "M.Com, NET Qualified",
-    image: teacher2,
-  },
+
   // ... add total 15 teachers
 ];
 
 const Staff = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <section className="max-w-screen-xl mx-auto px-6 py-16 lg:py-12">
         <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">
-          Faculty and Staff
+          FACULTY & STAFF
         </h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center justify-items-center">
@@ -79,21 +60,20 @@ const Staff = () => {
                 <img
                   src={teacher.image}
                   alt={teacher.name}
-                  className="w-48 h-52 object-cover rounded-lg "
+                  className="w-52 h-56 object-contain rounded-lg"
                 />
               </div>
 
               {/* Teacher Info */}
               <div className="p-4 text-center">
                 <h3 className="text-lg font-bold text-blue-900">{teacher.name}</h3>
-                <p className="italic text-gray-600">{teacher.designation}</p>
                 <p className="text-gray-700 mt-1">{teacher.qualification}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
 
   );

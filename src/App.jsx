@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router"
 import './App.css'
 
 import React from 'react'
-import About from "./componenets/about/About";
+import AboutPage from "./componenets/aboutPage/AboutPage";
 import Staff from "./componenets/staff/Staff";
 import Home from "./componenets/home/Home"
 import Courses from "./componenets/courses/Courses";
@@ -18,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/staff" element={<Staff />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/aboutPage" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
     </div>

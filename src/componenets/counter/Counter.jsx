@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FaUserGraduate, FaChalkboardTeacher, FaBuilding, FaBookOpen } from "react-icons/fa";
-import collegeBg from "../../assets/images/school1.jpg"; // apni college image ka path yahan import karo
 
 const statsData = [
   { label: "Students", value: 1200, icon: <FaUserGraduate /> },
@@ -63,27 +62,19 @@ const Stats = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16"
-      style={{
-        backgroundImage: `url(${collegeBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative py-12 bg-blue-900"
     >
-      {/* Colored Overlay like Mz E-Com */}
-      <div className="absolute inset-0 bg-black/40"></div>
-
       {/* Content */}
       <div className="relative max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {statsData.map((item, index) => (
           <div
             key={index}
-            className="bg-white/10 backdrop-blur-md shadow-xl p-8 hover:scale-105 transform transition duration-300 border border-white/20"
+            className="bg-white/10 backdrop-blur-md shadow-xl p-5 hover:scale-105 transform transition duration-300 border border-white/20 rounded-xl"
           >
-            <div className="text-5xl text-yellow-400 mb-4 flex justify-center drop-shadow-lg">
+            <div className="text-3xl md:text-5xl text-yellow-400 mb-4 flex justify-center drop-shadow-lg">
               {item.icon}
             </div>
-            <h2 className="text-4xl font-bold text-yellow-300 drop-shadow-md">
+            <h2 className="text-4xl font-bold text-yellow-400 drop-shadow-md">
               <Counter end={item.value} trigger={visible} />
             </h2>
             <p className="mt-2 text-lg font-medium text-white">{item.label}</p>

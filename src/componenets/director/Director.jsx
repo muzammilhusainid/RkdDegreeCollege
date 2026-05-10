@@ -3,7 +3,7 @@ import directorImg from "../../assets/images/owner.webp";
 
 const Director = () => {
     return (
-        <section className="py-12 bg-gray-50 director-section">
+        <section className="py-12 director-section">
             <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-4 items-center px-24">
 
                 {/* Director Image + Name Card */}
