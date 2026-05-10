@@ -78,10 +78,10 @@ const Header = () => {
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
             <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
             <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
-            <Link to="/admissions" className="hover:text-yellow-400 transition">Admissions</Link>
+            <Link to="#" className="hover:text-yellow-400 transition">Admissions</Link>
             <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
-            <Link to="/events" className="hover:text-yellow-400 transition">Events</Link>
-            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
+            <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
+            <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
           </nav>
           <div>
             <a
@@ -104,10 +104,10 @@ const Header = () => {
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
             <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
             <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
-            <Link to="/admissions" className="hover:text-yellow-400 transition">Admissions</Link>
+            <Link to="#" className="hover:text-yellow-400 transition">Admissions</Link>
             <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
-            <Link to="/events" className="hover:text-yellow-400 transition">Events</Link>
-            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
+            <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
+            <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
           </nav>
           <div>
             <a
@@ -137,10 +137,10 @@ const Header = () => {
           <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
           <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
           <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
-          <Link to="/admissions" className="hover:text-yellow-400 transition">Admissions</Link>
+          <Link to="#" className="hover:text-yellow-400 transition">Admissions</Link>
           <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
-          <Link to="/events" className="hover:text-yellow-400 transition">Events</Link>
-          <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
+          <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
+          <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
           <a
             href={RkdForm} target="blank"
             className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"

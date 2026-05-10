@@ -41,7 +41,7 @@ const Director = () => {
                     </blockquote>
 
                     <p className="text-gray-700 leading-relaxed">
-                        At RKD Degree College, we believe that true education goes beyond
+                        At Rajkali Devi Mahavidyalaya, we believe that true education goes beyond
                         classrooms. It is about nurturing integrity, discipline, and
                         leadership in every student. Our mission is to empower young minds
                         to become responsible citizens who contribute positively to the
