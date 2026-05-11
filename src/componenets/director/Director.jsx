@@ -3,8 +3,8 @@ import directorImg from "../../assets/images/owner.webp";
 
 const Director = () => {
     return (
-        <section className="py-12 director-section flex justify-center">
-            <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-4 items-center px-24">
+        <section className="py-12 director-section ">
+            <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-4 items-center px-24 flex justify-center">
 
                 {/* Director Image + Name Card */}
                 <div className="relative flex justify-center lg:justify-start">

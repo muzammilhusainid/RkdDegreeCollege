@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="z-50 w-full">
+    <header className="z-50">
       {/* Top Logo + Info Section (Desktop only) */}
       <div
         className={`hidden lg:flex max-w-screen-xl mx-auto justify-between items-center py-3 px-6 transition-all duration-500 ${
@@ -50,7 +50,7 @@ const Header = () => {
 
       {/* Mobile Header (Logo + Hamburger) */}
       <div
-        className={`flex lg:hidden justify-between items-center py-2 px-3 bg-white fixed top-0 left-0 w-full z-50 ${
+        className={`flex lg:hidden justify-between items-center py-3 px-4 bg-white fixed top-0 left-0 w-full z-50 ${
           isScrolled ? "shadow-md" : ""
         }`}
       >
@@ -58,9 +58,9 @@ const Header = () => {
           <img
             src={logo}
             alt="College Logo"
-            className="h-7 w-7 object-cover shadow-md flex-shrink-0"
+            className="h-8 w-8 object-cover shadow-md flex-shrink-0"
           />
-          <span className="text-sm font-bold text-blue-900 break-words max-w-[180px] leading-tight">
+          <span className="text-sm font-bold text-blue-900 break-words max-w-[200px]">
             Rajkali Devi Mahavidyalaya
           </span>
         </div>
@@ -94,7 +94,7 @@ const Header = () => {
             <a
               href={RkdForm}
               target="blank"
-              className="bg-yellow-400 text-blue-900 font-semibold px-3 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition text-sm"
+              className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
             >
               Admission Form
             </a>
@@ -122,7 +122,7 @@ const Header = () => {
             <a
               href={RkdForm}
               target="blank"
-              className="bg-yellow-400 text-blue-900 font-semibold px-3 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition text-sm"
+              className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
             >
               Admission Form
             </a>
@@ -155,7 +155,7 @@ const Header = () => {
           <a
             href={RkdForm}
             target="blank"
-            className="bg-yellow-400 text-blue-900 font-semibold px-3 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition text-sm"
+            className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
           >
             Admission Form
           </a>
