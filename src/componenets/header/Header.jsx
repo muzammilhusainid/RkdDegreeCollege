@@ -32,7 +32,7 @@ const Header = () => {
             alt="College Logo"
             className="h-12 w-12 object-cover shadow-md"
           />
-          <span className="text-xl font-bold text-blue-900">
+          <span className="text-2xl font-bold text-blue-900">
             Rajkali Devi Mahavidyalaya
           </span>
         </div>
@@ -60,7 +60,7 @@ const Header = () => {
             alt="College Logo"
             className="h-8 w-8 object-cover shadow-md flex-shrink-0"
           />
-          <span className="text-sm font-bold text-blue-900 break-words max-w-[200px]">
+          <span className="text-lg font-bold text-blue-900">
             Rajkali Devi Mahavidyalaya
           </span>
         </div>
