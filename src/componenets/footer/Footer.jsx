@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../assets/images/logo.jpg"; // apna logo path yahan import karo
 import RkdForm from "../../assets/images/RkdAdmissionForm.pdf"
+import LUHolydayList from "../../assets/images/LU-Holyday-List.pdf"
 
 const Footer = () => {
   return (
@@ -12,10 +13,10 @@ const Footer = () => {
         <div>
           <div className="flex items-center mb-4">
             <img src={logo} alt="RKD Logo" className="h-10 w-10 mr-3 rounded-full shadow-lg" />
-            <h2 className="text-xl font-semibold text-white ">RKD Degree College</h2>
+            <h2 className="text-xl font-semibold text-white ">Rajkali Devi Mahavidyalaya</h2>
           </div>
           <p className="leading-relaxed text-gray-400 text-justify">
-            RKD Degree College, affiliated to Lucknow University, established in 2013.  
+            Rajkali Devi Mahavidyalaya, affiliated to Lucknow University, established in 2010.  
             Dedicated to providing quality education, holistic development, and a professional learning environment.
           </p>
         </div>
@@ -26,10 +27,10 @@ const Footer = () => {
             Important
           </h3>
           <ul className="space-y-2">
-            <li><a href="/privacy" className="hover:text-blue-400 transition">Disclaimer</a></li>
-            <li><a href="/return" className="hover:text-blue-400 transition">Privacy Policy</a></li>
-            <li><a href="/terms" className="hover:text-blue-400 transition">Terms & Conditions</a></li>
-            <li><a href="/service" className="hover:text-blue-400 transition">Lucknow University</a></li>
+            <li><a href="/#" className="hover:text-blue-400 transition">Disclaimer</a></li>
+            <li><a href="/#" className="hover:text-blue-400 transition">Privacy Policy</a></li>
+            <li><a href="/#" className="hover:text-blue-400 transition">Terms & Conditions</a></li>
+            <li><a href="https://www.lkouniv.ac.in/" target="blank" className="hover:text-blue-400 transition">Lucknow University</a></li>
           </ul>
         </div>
 
@@ -42,7 +43,7 @@ const Footer = () => {
             <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
             <li><a href="/aboutPage" className="hover:text-blue-400 transition">About Us</a></li>
             <li><a href={RkdForm} target="blank" className="hover:text-blue-400 transition">Download Form</a></li>
-            <li><a href="/career" className="hover:text-blue-400 transition">List of Holidays (LU)</a></li>
+            <li><a href={LUHolydayList} target="blank" className="hover:text-blue-400 transition">List of Holidays (LU)</a></li>
           </ul>
         </div>
 
@@ -51,8 +52,8 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">
             Contact
           </h3>
-          <p>📞 +91-8896638315</p>
-          <p>📞 +91-8115067010</p>
+          <p>📞 +91-6306822532</p>
+          <p>📞 +91-8081738387</p>
           <p>✉️ muzammilhusainid</p>
 
           {/* Social Icons */}

@@ -85,7 +85,7 @@ const Courses = () => {
       <Header />
       <section className="max-w-screen-xl mx-auto px-6 py-16 lg:py-12">
         <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">
-          Courses Offered
+          COURSES OFFERED
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-8">

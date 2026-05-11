@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaPause, FaPlay } from "react-icons/fa";
+import BAScheme from "../../assets/images/BA-Scheme-Sem-IV-&-VI.pdf"
+import BScScheme from "../../assets/images/BSc-Scheme-Sem-IV-&-VI.pdf"
+import BComScheme from "../../assets/images/BCom-Scheme-Sem-IV-&-VI.pdf"
+import MAScheme from "../../assets/images/MA-Home-Science-Scheme-Sem-IV.pdf"
 
 const initialNotices = [
   { title: "Admission Form 2026", date: "01 May 2026", link: "/pdfs/admission.pdf" },
-  { title: "Exam Schedule", date: "02 May 2026", link: "/pdfs/exam.pdf" },
-  { title: "Holiday List", date: "03 May 2026", link: "/pdfs/holiday.pdf" },
-  { title: "Fee Notice Fee Notice Fee Notice Fee Notice Fee Notice Fee Notice", date: "04 May 2026", link: "/pdfs/fee.pdf" },
-  { title: "Result Declared", date: "05 May 2026", link: "/pdfs/result.pdf" },
+  { title: "MA Scheme Semester IV", date: "09 May 2026", link: MAScheme },
+  { title: "BA Scheme Semester IV & VI", date: "23 Apr 2026", link: BAScheme },
+  { title: "BSc Scheme Semester IV & VI", date: "23 Apr 2026", link: BScScheme },
+  { title: "BCom Scheme Semester IV & VI", date: "23 Apr 2026", link: BComScheme },
   { title: "Muzammil Husain", date: "05 May 2026", link: "/pdfs/result.pdf" },
-  { title: "Rajkali Devi Degree College Rajkali Devi Degree College", date: "05 May 2026", link: "/pdfs/result.pdf" },
+  { title: "Rajkali Devi Mahavidyalaya", date: "05 May 2026", link: "/pdfs/result.pdf" },
   { title: "RKD Mahavidyalaya", date: "05 May 2026", link: "/pdfs/result.pdf" },
 ];
 

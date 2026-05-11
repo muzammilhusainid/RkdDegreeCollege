@@ -11,9 +11,9 @@ const About = () => {
         </h2>
 
         {/* Grey Background Section */}
-        <div className="bg-gray-100 shadow-md p-8 space-y-6">
+        <div className="bg-gray-100 shadow-md p-4 md:p-8 space-y-6">
           {/* College Details */}
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
             <p>
               Rajkali Devi Mahavidyalaya, established in <span className="font-semibold">2010</span>,
               has been a proud institution dedicated to higher education. Initially affiliated

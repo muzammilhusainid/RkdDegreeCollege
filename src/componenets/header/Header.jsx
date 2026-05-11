@@ -40,10 +40,10 @@ const Header = () => {
         {/* Tagline + Contact */}
         <div className="flex flex-col items-end text-sm">
           <span className="font-semibold italic text-blue-900">
-            Empowering Education Since 1990
+            Address: Lahenga, Chhatoh, Salon, Raebareli
           </span>
           <span className="text-gray-600">
-            📞 +91-1234567890 | ✉️ info@college.edu
+            📞 +91-6306822532 | ✉️ info@college.edu
           </span>
         </div>
       </div>

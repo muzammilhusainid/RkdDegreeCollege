@@ -13,7 +13,7 @@ const facilitiesData = [
 
 const Facilities = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-8">
       <div className="max-w-screen-xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">
           OUR FACILITIES

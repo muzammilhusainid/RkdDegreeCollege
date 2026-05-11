@@ -3,7 +3,7 @@ import directorImg from "../../assets/images/owner.webp";
 
 const Director = () => {
     return (
-        <section className="py-12 director-section ">
+        <section className="pt-12 director-section ">
             <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-4 items-center px-24 flex justify-center">
 
                 {/* Director Image + Name Card */}
@@ -34,13 +34,13 @@ const Director = () => {
                         </h2>
                     </div>
 
-                    <blockquote className="border-l-4 border-yellow-500 pl-4 italic text-gray-700 text-lg">
+                    <blockquote className="border-l-4 border-yellow-500 pl-4 italic text-gray-700 text-lg text-justify">
                         "Education is not just about acquiring knowledge, but about shaping
                         character, building values, and preparing students to lead society
                         with wisdom and compassion."
                     </blockquote>
 
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed text-justify">
                         At Rajkali Devi Mahavidyalaya, we believe that true education goes beyond
                         classrooms. It is about nurturing integrity, discipline, and
                         leadership in every student. Our mission is to empower young minds
@@ -48,7 +48,7 @@ const Director = () => {
                         nation.
                     </p>
 
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed text-justify">
                         We encourage our students to strive for excellence in academics,
                         sports, and cultural activities, while also embracing values of
                         brotherhood and service. Together, we aim to build a future where
