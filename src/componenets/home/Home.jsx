@@ -17,6 +17,7 @@ const Home = () => {
       <Carousel/>
       <NoticeEvent/>
       <Counter/>
+      <About/>
       <Facilities/>
       <Footer/>
     </div>
