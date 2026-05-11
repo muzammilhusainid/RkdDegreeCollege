@@ -11,7 +11,7 @@ import { Form } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="">
+    <div>
       <BrowserRouter>
       <ScrollToTop/>
         <Routes>
