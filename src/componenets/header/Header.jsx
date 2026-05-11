@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.jpg";
-import RkdForm from "../../assets/images/RkdAdmissionForm.pdf"
+import RkdForm from "../../assets/images/RkdAdmissionForm.pdf";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +19,11 @@ const Header = () => {
     <header className="z-50">
       {/* Top Logo + Info Section (Desktop only) */}
       <div
-        className={`hidden lg:flex max-w-screen-xl mx-auto justify-between items-center py-3 px-6 transition-all duration-500 ${isScrolled ? "opacity-0 -translate-y-10 pointer-events-none" : "opacity-100 translate-y-0"
-          }`}
+        className={`hidden lg:flex max-w-screen-xl mx-auto justify-between items-center py-3 px-6 transition-all duration-500 ${
+          isScrolled
+            ? "opacity-0 -translate-y-10 pointer-events-none"
+            : "opacity-100 translate-y-0"
+        }`}
       >
         {/* Logo + College Name */}
         <div className="flex items-center space-x-3">
@@ -47,21 +50,22 @@ const Header = () => {
 
       {/* Mobile Header (Logo + Hamburger) */}
       <div
-        className={`flex lg:hidden justify-between items-center py-3 px-6 bg-white transition-all duration-500 fixed top-0 left-0 w-full z-50 ${isScrolled ? "shadow-md" : ""
-          }`}
+        className={`flex lg:hidden justify-between items-center py-3 px-4 bg-white fixed top-0 left-0 w-full z-50 ${
+          isScrolled ? "shadow-md" : ""
+        }`}
       >
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2 overflow-hidden">
           <img
             src={logo}
             alt="College Logo"
-            className="h-10 w-10 object-cover shadow-md"
+            className="h-8 w-8 object-cover shadow-md flex-shrink-0"
           />
-          <span className="text-lg font-bold text-blue-900">
+          <span className="text-sm font-bold text-blue-900 break-words max-w-[200px]">
             Rajkali Devi Mahavidyalaya
           </span>
         </div>
         <button
-          className="focus:outline-none text-2xl"
+          className="flex-shrink-0 focus:outline-none text-xl"
           onClick={() => setIsOpen(true)}
         >
           ☰
@@ -70,8 +74,11 @@ const Header = () => {
 
       {/* Desktop Navigation (normal, visible when not scrolled) */}
       <div
-        className={`hidden lg:block bg-blue-900 text-white shadow-md transition-all duration-500 ${isScrolled ? "opacity-0 -translate-y-10 pointer-events-none" : "opacity-100 translate-y-0"
-          }`}
+        className={`hidden lg:block bg-blue-900 text-white shadow-md transition-all duration-500 ${
+          isScrolled
+            ? "opacity-0 -translate-y-10 pointer-events-none"
+            : "opacity-100 translate-y-0"
+        }`}
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-6">
           <nav className="flex space-x-6 font-medium">
@@ -85,7 +92,8 @@ const Header = () => {
           </nav>
           <div>
             <a
-              href={RkdForm} target="blank"
+              href={RkdForm}
+              target="blank"
               className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
             >
               Admission Form
@@ -96,8 +104,9 @@ const Header = () => {
 
       {/* Sticky Navigation (Desktop only, visible when scrolled) */}
       <div
-        className={`hidden lg:block fixed top-0 left-0 w-full bg-blue-900 text-white shadow-md transition-transform duration-500 ${isScrolled ? "translate-y-0" : "-translate-y-full"
-          } z-50`}
+        className={`hidden lg:block fixed top-0 left-0 w-full bg-blue-900 text-white shadow-md transition-transform duration-500 ${
+          isScrolled ? "translate-y-0" : "-translate-y-full"
+        } z-50`}
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-6">
           <nav className="flex space-x-6 font-medium">
@@ -111,8 +120,9 @@ const Header = () => {
           </nav>
           <div>
             <a
-              href={RkdForm} target="blank"
-              className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transitijon"
+              href={RkdForm}
+              target="blank"
+              className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
             >
               Admission Form
             </a>
@@ -122,8 +132,9 @@ const Header = () => {
 
       {/* Mobile Slide Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-blue-900 text-white transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
-          } lg:hidden shadow-lg z-50`}
+        className={`fixed top-0 right-0 h-full w-64 bg-blue-900 text-white transform transition-transform duration-500 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } lg:hidden shadow-lg z-50`}
       >
         <div className="flex justify-end p-4">
           <button
@@ -142,7 +153,8 @@ const Header = () => {
           <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
           <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
           <a
-            href={RkdForm} target="blank"
+            href={RkdForm}
+            target="blank"
             className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 shadow-md hover:shadow-lg transition"
           >
             Admission Form
