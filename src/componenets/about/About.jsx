@@ -22,13 +22,13 @@ const About = () => {
               ensuring academic excellence and recognition.
             </p>
             <p>
-              Every year, nearly <span className="font-semibold">500 new students</span> join
+              Every year, nearly <span className="font-semibold">300 new students</span> join
               our college, reflecting the trust and reputation we have built in the region.
               Our aim is to provide quality education, nurture talent, and empower students
               with knowledge and values that prepare them for a successful future.
             </p>
             <p>
-              At RKD Degree College, teaching is not just about academics — it is about
+              At Rajkali Devi Mahavidyalaya, teaching is not just about academics — it is about
               holistic development. With experienced faculty, interactive learning methods,
               and a focus on discipline, we ensure that every student receives the best
               environment to grow intellectually and personally.

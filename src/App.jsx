@@ -10,6 +10,8 @@ import ScrollToTop from "./componenets/scrollToTop/ScrollToTop";
 import { Form } from 'react-router-dom'
 import AllNoticeComponent from "./componenets/allNotice/AllNoticeComponent";
 import AllEventsComponent from "./componenets/event/AllEventsComponent";
+import ContactUs from "./componenets/contact/Contact";
+import ContactComponent from "./componenets/contact/ContactComponent";
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/aboutPage" element={<AboutPage />} />
           <Route path="/all-notices" element={<AllNoticeComponent />} />
           <Route path="/all-events" element={<AllEventsComponent />} />
+          <Route path="/contact" element={<ContactComponent />} />
         </Routes>
       </BrowserRouter>
     </div>

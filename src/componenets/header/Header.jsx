@@ -19,11 +19,10 @@ const Header = () => {
     <header className="z-50">
       {/* Top Logo + Info Section (Desktop only) */}
       <div
-        className={`hidden lg:flex max-w-screen-xl mx-auto justify-between items-center py-3 px-6 transition-all duration-500 ${
-          isScrolled
+        className={`hidden lg:flex max-w-screen-xl mx-auto justify-between items-center py-3 px-6 transition-all duration-500 ${isScrolled
             ? "opacity-0 -translate-y-10 pointer-events-none"
             : "opacity-100 translate-y-0"
-        }`}
+          }`}
       >
         {/* Logo + College Name */}
         <div className="flex items-center space-x-3">
@@ -50,9 +49,8 @@ const Header = () => {
 
       {/* Mobile Header (Logo + Hamburger) */}
       <div
-        className={`flex lg:hidden justify-between items-center py-3 px-4 bg-white fixed top-0 left-0 w-full z-50 ${
-          isScrolled ? "shadow-md" : ""
-        }`}
+        className={`flex lg:hidden justify-between items-center py-3 px-4 bg-white fixed top-0 left-0 w-full z-50 ${isScrolled ? "shadow-md" : ""
+          }`}
       >
         <div className="flex items-center space-x-2 overflow-hidden">
           <img
@@ -74,21 +72,20 @@ const Header = () => {
 
       {/* Desktop Navigation (normal, visible when not scrolled) */}
       <div
-        className={`hidden lg:block bg-blue-900 text-white shadow-md transition-all duration-500 ${
-          isScrolled
+        className={`hidden lg:block bg-blue-900 text-white shadow-md transition-all duration-500 ${isScrolled
             ? "opacity-0 -translate-y-10 pointer-events-none"
             : "opacity-100 translate-y-0"
-        }`}
+          }`}
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-6">
           <nav className="flex space-x-6 font-medium">
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
             <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
             <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
-            <Link to="#" className="hover:text-yellow-400 transition">Admissions</Link>
-            <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
-            <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
-            <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
+            <Link to="/staff" className="hover:text-yellow-400 transition">Faculty & Staff</Link>
+            <Link to="/all-notices" className="hover:text-yellow-400 transition">Important Notices</Link>
+            <Link to="/all-events" className="hover:text-yellow-400 transition">Events</Link>
+            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
           </nav>
           <div>
             <a
@@ -104,19 +101,18 @@ const Header = () => {
 
       {/* Sticky Navigation (Desktop only, visible when scrolled) */}
       <div
-        className={`hidden lg:block fixed top-0 left-0 w-full bg-blue-900 text-white shadow-md transition-transform duration-500 ${
-          isScrolled ? "translate-y-0" : "-translate-y-full"
-        } z-50`}
+        className={`hidden lg:block fixed top-0 left-0 w-full bg-blue-900 text-white shadow-md transition-transform duration-500 ${isScrolled ? "translate-y-0" : "-translate-y-full"
+          } z-50`}
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-6">
           <nav className="flex space-x-6 font-medium">
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
             <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
             <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
-            <Link to="#" className="hover:text-yellow-400 transition">Admissions</Link>
-            <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
-            <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
-            <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
+            <Link to="/staff" className="hover:text-yellow-400 transition">Faculty & Staff</Link>
+            <Link to="/all-notices" className="hover:text-yellow-400 transition">Important Notices</Link>
+            <Link to="/all-events" className="hover:text-yellow-400 transition">Events</Link>
+            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
           </nav>
           <div>
             <a
@@ -132,9 +128,8 @@ const Header = () => {
 
       {/* Mobile Slide Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-blue-900 text-white transform transition-transform duration-500 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } lg:hidden shadow-lg z-50`}
+        className={`fixed top-0 right-0 h-full w-64 bg-blue-900 text-white transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+          } lg:hidden shadow-lg z-50`}
       >
         <div className="flex justify-end p-4">
           <button
@@ -148,10 +143,10 @@ const Header = () => {
           <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
           <Link to="/aboutPage" className="hover:text-yellow-400 transition">About Us</Link>
           <Link to="/courses" className="hover:text-yellow-400 transition">Courses</Link>
-          <Link to="#" className="hover:text-yellow-400 transition">Admissions</Link>
-          <Link to="/staff" className="hover:text-yellow-400 transition">Faculty</Link>
-          <Link to="#" className="hover:text-yellow-400 transition">Events</Link>
-          <Link to="#" className="hover:text-yellow-400 transition">Contact</Link>
+          <Link to="/staff" className="hover:text-yellow-400 transition">Faculty & Staff</Link>
+          <Link to="/all-notices" className="hover:text-yellow-400 transition">Important Notices</Link>
+          <Link to="/all-events" className="hover:text-yellow-400 transition">Events</Link>
+          <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
           <a
             href={RkdForm}
             target="blank"

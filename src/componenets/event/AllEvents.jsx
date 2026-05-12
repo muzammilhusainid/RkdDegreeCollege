@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import event1 from "../../assets/images/event1.png";
-import event2 from "../../assets/images/event2.jpg";
+import event1 from "../../assets/images/Rkd-Admission-Poster1.png";
+import event2 from "../../assets/images/Rkd-Admission-Banner.png";
 import event3 from "../../assets/images/event3.jpg";
 import event4 from "../../assets/images/event4.jpg";
 import event5 from "../../assets/images/event5.jpg";
 
 const events = [
-  { id: 1, title: "Annual Fest", image: event1 },
-  { id: 2, title: "Sports Day", image: event2 },
+  { id: 1, title: "Admission Now", image: event1 },
+  { id: 2, title: "Admission Open", image: event2 },
   { id: 3, title: "Seminar", image: event3 },
   { id: 4, title: "Workshop", image: event4 },
   { id: 5, title: "Convocation", image: event5 },
@@ -25,7 +25,7 @@ const AllEvents = () => {
   const totalPages = Math.ceil(events.length / eventsPerPage);
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col mx-auto max-w-screen-lg w-full my-10">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col mx-auto max-w-screen-lg w-full my-16 lg:my-10 ">
       <h2 className="bg-green-700 text-white text-2xl font-bold p-4 text-center">
         All Events
       </h2>
@@ -43,7 +43,7 @@ const AllEvents = () => {
               <img
                 src={e.image}
                 alt={e.title}
-                className="w-full h-full object-contain rounded-t-lg"
+                className="w-full h-52 object-contain rounded-t-lg"
               />
               <div className="p-4 text-center">
                 <h3 className="text-lg font-bold text-green-700">{e.title}</h3>

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import muzammil from "../../assets/images/muzammil.jpg";
+import muzammil from "../../assets/images/Muzammil-Husain.jpeg";
 import sachin from "../../assets/images/sachin.jpg";
 import vijay from "../../assets/images/vijay.jpg";
 import rajiv from "../../assets/images/rajiv.jpg";
@@ -10,28 +10,29 @@ import vinay from "../../assets/images/vinay.jpg";
 
 const facultyData = [
   {
-    name: "VINAY SRIVASTAV",
-    qualification: "P.H.D POLITICAL SCIENCE",
+    name: "VINAY KM. SRIVASTAV",
+    qualification: "Voice Principal",
     image: vinay,
   },
   {
     name: "VIJAY PAL PANDEY",
-    qualification: "M.A SOCIOLOGY",
+    qualification: "Sociology",
     image: vijay,
   },
   {
     name: "RAJIV KUMAR",
-    qualification: "M.Sc. MATH",
+    qualification: "Mathematics", 
     image: rajiv,
   },
   {
     name: "MUZAMMIL HUSAIN",
-    qualification: "B.C.A, CABA-MDTP, CCC",
+    qualification: "Web Developer & IT Executive",
     image: muzammil,
+    link:"https://mzhusain.vercel.app/"
   },
    {
     name: "SACHIN KUMAR",
-    qualification: "B.A, DCA",
+    qualification: "Computer Operator",
     image: sachin,
   },
 
@@ -56,6 +57,7 @@ const Staff = () => {
                         transition duration-300 ease-in-out hover:cursor-pointer drop-shadow-[0px_0px_10px_rgba(0,0,0,1)]`}
             >
               {/* Teacher Image with white border + shadow */}
+              <a href={teacher.link} target="blanck">
               <div className="flex justify-center mt-4">
                 <img
                   src={teacher.image}
@@ -69,6 +71,7 @@ const Staff = () => {
                 <h3 className="text-lg font-bold text-blue-900">{teacher.name}</h3>
                 <p className="text-gray-700 mt-1">{teacher.qualification}</p>
               </div>
+              </a>
             </div>
           ))}
         </div>

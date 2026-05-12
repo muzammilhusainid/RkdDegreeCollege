@@ -29,7 +29,7 @@ const AllNotices = () => {
   const totalPages = Math.ceil(allNotices.length / noticesPerPage);
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col mx-auto max-w-screen-lg w-full my-10">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col mx-auto max-w-screen-lg w-full my-16 lg:my-10">
       <h2 className="bg-blue-900 text-white text-2xl font-bold p-4 text-center">
         All Notices
       </h2>

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useSwipeable } from "react-swipeable";
-import event1 from "../../assets/images/event1.png";
+import event1 from "../../assets/images/Rkd-Admission-Poster1.png";
 import event2 from "../../assets/images/event2.jpg";
-import event3 from "../../assets/images/event3.jpg";
+import event3 from "../../assets/images/Rkd-Admission-Banner.png";
 import event4 from "../../assets/images/event4.jpg";
 import event5 from "../../assets/images/event5.jpg";
 import { Link } from "react-router-dom";
 
 const events = [
-  { title: "Annual Fest", image: event1 },
+  { title: "Admission Open", image: event1 },
   { title: "Sports Day", image: event2 },
   { title: "Seminar", image: event3 },
   { title: "Workshop", image: event4 },
@@ -59,10 +59,35 @@ const Event = () => {
         Events
       </h2>
 
-      {/* 3D Coverflow Carousel */}
+      {/* Mobile Layout: Simple Horizontal Slider */}
+      <div className="lg:hidden overflow-x-auto flex gap-4 p-4">
+        {events.map((e, i) => (
+          <div
+            key={i}
+            className="flex-shrink-0 w-40 h-52 bg-gray-100 rounded-lg shadow-md"
+          >
+            <a
+            href={e.image}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={e.image}
+              alt={e.title}
+              className="w-full h-40 object-cover rounded-t-lg"
+            />
+            <p className="text-center text-sm font-semibold text-green-700 mt-1">
+              {e.title}
+            </p>
+            </a>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop Layout: 3D Coverflow Carousel */}
       <div
         {...handlers}
-        className="relative flex-1 h-96 flex justify-center items-center overflow-hidden perspective-[1200px]"
+        className="hidden lg:flex relative flex-1 h-96 justify-center items-center overflow-hidden perspective-[1200px]"
       >
         {getVisibleEvents().map((e, i) => {
           const offset = i - 2; // center card = 0
@@ -82,18 +107,24 @@ const Event = () => {
                 opacity: isCenter ? 1 : 0.6,
               }}
             >
+                 <a
+            href={e.image}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
               <img
                 src={e.image}
                 alt={e.title}
                 className="w-48 h-56 object-cover rounded-lg shadow-xl"
               />
+              </a>
             </div>
           );
         })}
       </div>
 
-      {/* Dot Indicators */}
-      <div className="flex justify-center items-center gap-2 py-3">
+      {/* Dot Indicators (Desktop only) */}
+      <div className="hidden lg:flex justify-center items-center gap-2 py-3">
         {events.map((_, i) => (
           <div
             key={i}
@@ -107,8 +138,10 @@ const Event = () => {
 
       {/* Bottom strip */}
       <div className="bg-gray-100 flex justify-between items-center p-3">
-        <Link to="/all-events" className="text-green-700 font-semibold">View All Events</Link>
-        <div className="flex gap-3">
+        <Link to="/all-events" className="text-green-700 font-semibold">
+          View All Events
+        </Link>
+        <div className="hidden lg:flex gap-3">
           <button onClick={prevSlide} className="text-green-700">
             <FaChevronLeft />
           </button>

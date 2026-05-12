@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import { FaUserGraduate, FaChalkboardTeacher, FaBuilding, FaBookOpen } from "react-icons/fa";
 
 const statsData = [
-  { label: "Students", value: 1200, icon: <FaUserGraduate /> },
-  { label: "Faculty", value: 45, icon: <FaChalkboardTeacher /> },
-  { label: "Departments", value: 8, icon: <FaBuilding /> },
-  { label: "Courses", value: 25, icon: <FaBookOpen /> },
+  { label: "Students", value: 600, icon: <FaUserGraduate /> },
+  { label: "Faculty", value: 25, icon: <FaChalkboardTeacher /> },
+  { label: "Departments", value: 4, icon: <FaBuilding /> },
+  { label: "Courses", value: 9, icon: <FaBookOpen /> },
 ];
 
 const Counter = ({ end, trigger }) => {

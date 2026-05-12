@@ -10,10 +10,10 @@ const Director = () => {
                 <div className="relative flex justify-center lg:justify-start">
                     <div className="relative inline-block">
                         {/* Frame strokes */}
-                        <div class="directorPic w-[316px] md:w-[336px] h-[380px] md:h-[400px] flex justify-center items-center relative hover:scale-105 duration-500">
-                            <div class="bg-gradient-to-tl from-[#1e1d8ae8] to-sky-500 w-32 h-32 absolute top-0 left-0"></div>
-                            <div class="bg-gradient-to-br from-[#1e1d8ae8] to-sky-500 w-32 h-32 absolute bottom-0 right-0"></div>
-                            <img src={directorImg} alt="directorImg" class="w-[300px] md:w-80 h-[364px] md:h-96 z-10 " /></div>
+                        <div className="directorPic w-[316px] md:w-[336px] h-[380px] md:h-[400px] flex justify-center items-center relative hover:scale-105 duration-500">
+                            <div className="bg-gradient-to-tl from-[#1e1d8ae8] to-sky-500 w-32 h-32 absolute top-0 left-0"></div>
+                            <div className="bg-gradient-to-br from-[#1e1d8ae8] to-sky-500 w-32 h-32 absolute bottom-0 right-0"></div>
+                            <img src={directorImg} alt="directorImg" className="w-[300px] md:w-80 h-[364px] md:h-96 z-10 " /></div>
 
                         <div className="absolute bottom-2 left-2  bg-yellow-600 text-white px-12 py-1 shadow-lg text-center z-40">
                             <h4 className="text-lg font-bold">Dr. Saroj Kumar Pandey</h4>
