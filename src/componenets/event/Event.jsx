@@ -6,6 +6,7 @@ import event2 from "../../assets/images/event2.jpg";
 import event3 from "../../assets/images/event3.jpg";
 import event4 from "../../assets/images/event4.jpg";
 import event5 from "../../assets/images/event5.jpg";
+import { Link } from "react-router-dom";
 
 const events = [
   { title: "Annual Fest", image: event1 },
@@ -106,7 +107,7 @@ const Event = () => {
 
       {/* Bottom strip */}
       <div className="bg-gray-100 flex justify-between items-center p-3">
-        <span className="text-green-700 font-semibold">View All Events</span>
+        <Link to="/all-events" className="text-green-700 font-semibold">View All Events</Link>
         <div className="flex gap-3">
           <button onClick={prevSlide} className="text-green-700">
             <FaChevronLeft />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaPause, FaPlay } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import BAScheme from "../../assets/images/BA-Scheme-Sem-IV-&-VI.pdf"
 import BScScheme from "../../assets/images/BSc-Scheme-Sem-IV-&-VI.pdf"
 import BComScheme from "../../assets/images/BCom-Scheme-Sem-IV-&-VI.pdf"
@@ -107,9 +108,9 @@ const Notice = () => {
 
       {/* Bottom Strip */}
       <div className="bg-gray-100 flex justify-between items-center p-3">
-        <a href="/all-notices" className="text-blue-600 font-semibold">
+        <Link to="/all-notices" className="text-blue-600 font-semibold">
           View All Notices
-        </a>
+        </Link>
         <button
           onClick={() => setPaused(!paused)}
           className="text-blue-600 flex items-center gap-2"

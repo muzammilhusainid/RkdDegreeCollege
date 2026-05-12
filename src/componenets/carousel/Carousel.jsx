@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import RkdAdmissionBanner from "../../assets/images/Rkd-Admission-Banner.png";
 import school from "../../assets/images/school.jpg";
 import school1 from "../../assets/images/school1.jpg";
 import school6 from "../../assets/images/school6.jpg";
 import school7 from "../../assets/images/school7.jpg";
 import school2 from "../../assets/images/school2.jpg";
 
-const images = [school, school1, school6, school7, school2];
+const images = [RkdAdmissionBanner, school, school1, school6, school7, school2];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
