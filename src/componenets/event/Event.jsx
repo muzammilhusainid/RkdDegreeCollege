@@ -9,9 +9,9 @@ import event5 from "../../assets/images/event5.jpg";
 import { Link } from "react-router-dom";
 
 const events = [
-  { title: "Admission Open", image: event1 },
+  { title: "Admission Now", image: event1 },
   { title: "Sports Day", image: event2 },
-  { title: "Seminar", image: event3 },
+  { title: "Admission Open", image: event3 },
   { title: "Workshop", image: event4 },
   { title: "Convocation", image: event5 },
 ];
